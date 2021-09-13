@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{02F5B7A3-F66D-4D2E-81F0-EA46F477E265}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BanhNgot2</RootNamespace>
+    <AssemblyName>BanhNgot2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.14.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.14.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.1\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DangNhap1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap1.Designer.cs">
+      <DependentUpon>DangNhap1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonHang.Designer.cs">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kho.Designer.cs">
+      <DependentUpon>Kho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MatHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatHang.Designer.cs">
+      <DependentUpon>MatHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaCungCap.Designer.cs">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuNhap.Designer.cs">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhieuXuat.Designer.cs">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLy.Designer.cs">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DangNhap1.resx">
+      <DependentUpon>DangNhap1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonHang.resx">
+      <DependentUpon>DonHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kho.resx">
+      <DependentUpon>Kho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatHang.resx">
+      <DependentUpon>MatHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaCungCap.resx">
+      <DependentUpon>NhaCungCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuNhap.resx">
+      <DependentUpon>PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhieuXuat.resx">
+      <DependentUpon>PhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuanLy.resx">
+      <DependentUpon>QuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_user_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh-trun_637347283158779475.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_user_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banhgato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banh6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tiramisu-cake.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
